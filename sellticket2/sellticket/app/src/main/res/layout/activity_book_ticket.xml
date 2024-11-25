@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:id="@+id/expand_menu"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E5000000"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:layout_gravity="end"
+        android:visibility='gone'> <!-- Initially hidden -->
+
+        <LinearLayout
+            android:id="@+id/menu_top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <!-- Notifications Icon (Start) -->
+            <ImageView
+                android:id="@+id/notification_icon_menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_bell" />
+
+            <!-- Space in the middle -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Settings Icon (End) -->
+            <ImageView
+                android:id="@+id/settings_icon_menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_gear" />
+        </LinearLayout>
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/image_view_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profile_image"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true" />
+
+        <TextView
+            android:id="@+id/text_view_username"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Username"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Line on Top -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BFFFFFFF" />
+
+            <!-- Text in the middle -->
+            <TextView
+                android:id="@+id/button_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Ticket"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center" />
+
+            <!-- Line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BFFFFFFF" />
+
+            <!-- Text in the middle -->
+            <TextView
+                android:id="@+id/button_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log out"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center" />
+
+            <!-- Line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BFFFFFFF" />
+
+            <!-- Text in the middle -->
+            <TextView
+                android:id="@+id/button_home2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log out"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center" />
+
+            <!-- Line on Bottom -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BFFFFFFF" />
+        </LinearLayout>
+
+        <!-- Add more buttons or options as needed -->
+    </LinearLayout>
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/rounded_background"
+        android:layout_margin="10dp"
+        android:padding="8dp">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_image"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="40dp"
+            android:clipToOutline="true" />
+
+        <!-- Name film -->
+        <TextView
+            android:id="@+id/film_name_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Film Name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Ticket Icon -->
+        <ImageView
+            android:id="@+id/ticket_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_ticket" />
+
+        <!-- Settings Icon -->
+        <ImageView
+            android:id="@+id/settings_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_setting"/>
+    </LinearLayout>
+
+</FrameLayout>

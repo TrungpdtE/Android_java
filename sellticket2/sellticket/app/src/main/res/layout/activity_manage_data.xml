@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:text="Manage Cinemas"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editTextCinemaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:padding="12dp"
+            android:hint="Cinema Name"/>
+
+        <EditText
+            android:id="@+id/editTextCinemaAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="Cinema Address"/>
+
+        <EditText
+            android:id="@+id/editTextCinemaContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="Contact Number"/>
+
+        <Button
+            android:id="@+id/buttonAddCinema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Cinema"/>
+
+        <ListView
+            android:id="@+id/listViewCinemas"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:text="Manage Movies"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editTextMovieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="Movie Title"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/editTextMovieGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="Movie Genre"/>
+
+        <Button
+            android:id="@+id/buttonAddMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Movie"/>
+
+        <ListView
+            android:id="@+id/listViewMovies"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:text="Manage Users"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User  Name"/>
+
+        <EditText
+            android:id="@+id/editTextUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="User  Email"/>
+
+        <Button
+            android:id="@+id/buttonAddUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add User"
+            tools:ignore="HardcodedText" />
+
+        <ListView
+            android:id="@+id/listViewUsers"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            tools:ignore="NestedScrolling" />
+    </LinearLayout>
+</ScrollView>

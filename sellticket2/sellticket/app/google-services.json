@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "97148310639",
+    "firebase_url": "https://sellticket-522a5-default-rtdb.firebaseio.com",
+    "project_id": "sellticket-522a5",
+    "storage_bucket": "sellticket-522a5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97148310639:android:748624bac4a6b17b9a699a",
+        "android_client_info": {
+          "package_name": "com.example.sellticket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz7bN_1QVpkLk5G49vw8PZ8F2wsAOFvhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97148310639:android:10d9eb9713105fe29a699a",
+        "android_client_info": {
+          "package_name": "tdtu.edu.sellticket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz7bN_1QVpkLk5G49vw8PZ8F2wsAOFvhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
